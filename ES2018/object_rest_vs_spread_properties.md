@@ -20,7 +20,7 @@ function ABC(...params) {
   console.log ('params', params);
 }
 ```
-
+## Destructing purpose:
 ```javascript
 const { name, ...otherDetails } = { name: 'Alice', age: 25, country: 'Canada' };
 
