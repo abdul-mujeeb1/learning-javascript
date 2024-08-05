@@ -14,6 +14,12 @@ console.log(combined); // { name: 'John', age: 30, city: 'New York' }
 # Rest Operator (...) in Object Destructuring:
 
 The rest operator is often used in object destructuring to capture some properties and store the rest in a separate object.
+and also useful in function calls -> get all arguments in one single array 
+```javascript
+function ABC(...params) {
+  console.log ('params', params);
+}
+```
 
 ```javascript
 const { name, ...otherDetails } = { name: 'Alice', age: 25, country: 'Canada' };
