@@ -60,23 +60,23 @@ Sure, here are some questions to test your knowledge about the spread and rest o
 Feel free to answer these questions, and I can provide feedback or explanations as needed!
 
 -----------------------------------------------------------------
-ANSWERS ATTEMPT:
-1- [ 2, 4, 6 ]
-2- const arr = [2,45,67,89]; 
+### ANSWERS ATTEMPT:
+1. [ 2, 4, 6 ]
+2. const arr = [2,45,67,89]; 
 Math.min(...arr)
 console.log(Math.min(...arr))
-3- const {name, ...otherObject} = person;
-4- const arr1 = [1, 2, 3]
+3. const {name, ...otherObject} = person;
+4. const arr1 = [1, 2, 3]
 const arr2 = [4,5,6]
 console.log([...arr1, ...arr2])
-5- {role: 'admin', ...user}
-6- example function takes 2 parameters a & b and then remaining alls in one array of rest 
+5. {role: 'admin', ...user}
+6. example function takes 2 parameters a & b and then remaining alls in one array of rest 
 and example2 function error bcz Rest parameter must be last formal parameter
-7- [ 0, 1, 2, 3, 4, 5 ]
-8- { age: 30, role: 'designer' };
-9- function assignRole(obj) {
+7. [ 0, 1, 2, 3, 4, 5 ]
+8. { age: 30, role: 'designer' };
+9. function assignRole(obj) {
     const updatedObj = {...obj, role: 'admin'};
     return updatedObj;
 }
 console.log(assignRole({user: 'Abdul', id: 34}));
-10- Error! reason is rest element must be last here it is doing extraction
+10. Error! reason is rest element must be last here it is doing extraction
