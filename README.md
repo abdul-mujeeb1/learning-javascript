@@ -112,6 +112,7 @@ d.c.deep = 5;
 ```
 - Warning: Deep clone comes with performance issue becuase of massive objects which are more deep.
 
+# Type coercion
 Type coercion in JavaScript refers to the automatic or implicit conversion of values from one data type to another. This can happen when operators or functions are applied to values of different types, or when JavaScript expects a specific type but receives a different one. There are two types of type coercion in JavaScript: implicit and explicit.
 
 ### Implicit Type Coercion
