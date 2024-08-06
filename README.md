@@ -112,20 +112,90 @@ d.c.deep = 5;
 ```
 - Warning: Deep clone comes with performance issue becuase of massive objects which are more deep.
 
+Type coercion in JavaScript refers to the automatic or implicit conversion of values from one data type to another. This can happen when operators or functions are applied to values of different types, or when JavaScript expects a specific type but receives a different one. There are two types of type coercion in JavaScript: implicit and explicit.
 
-# Type Coercion
-- when operands are of different types. one of them is equivalent to equal value. language convert a type to certain type.
-- when you use == operator it means compare only values
-- type coersion works in if statements as well like if(5) JS turn 5 to true
-- === no type coersion
-  
+### Implicit Type Coercion
+
+Implicit type coercion occurs when JavaScript automatically converts one data type to another. This can often lead to unexpected results.
+
+Examples:
+
+1. **String to Number:**
+   ```javascript
+   let result = '5' - 2; // result is 3
+   ```
+
+2. **Number to String:**
+   ```javascript
+   let result = '5' + 2; // result is '52'
+   ```
+
+3. **Boolean to Number:**
+   ```javascript
+   let result = true + 1; // result is 2
+   ```
+
+4. **Null to Number:**
+   ```javascript
+   let result = null + 1; // result is 1
+   ```
+
+5. **Undefined to Number:**
+   ```javascript
+   let result = undefined + 1; // result is NaN
+   ```
+
+### Explicit Type Coercion
+
+Explicit type coercion occurs when you manually convert a value from one type to another using built-in functions or operators.
+
+Examples:
+
+1. **String to Number:**
+   ```javascript
+   let num = Number('5'); // num is 5
+   let num = parseInt('5'); // num is 5
+   let num = parseFloat('5.5'); // num is 5.5
+   ```
+
+2. **Number to String:**
+   ```javascript
+   let str = String(5); // str is '5'
+   let str = (5).toString(); // str is '5'
+   ```
+
+3. **Boolean to Number:**
+   ```javascript
+   let num = Number(true); // num is 1
+   let num = Number(false); // num is 0
+   ```
+
+4. **Boolean to String:**
+   ```javascript
+   let str = String(true); // str is 'true'
+   let str = String(false); // str is 'false'
+   ```
+
+5. **Number to Boolean:**
+   ```javascript
+   let bool = Boolean(1); // bool is true
+   let bool = Boolean(0); // bool is false
+   ```
+
+### Examples in Practice
+
+Implicit type coercion:
 ```javascript
- 1 == '1'
+let a = '10';
+let b = 5;
+let result = a * b; // result is 50 because '10' is coerced to 10
+```
 
-// Object.is() pretty work same as === 
-// NaN === Nan // false
-// we use Object.is(NaN, Nan) // true
-
+Explicit type coercion:
+```javascript
+let a = '10';
+let b = 5;
+let result = Number(a) * b; // result is 50 because '10' is explicitly converted to 10
 ```
 
 # JTS Dynamic vs Static typed
