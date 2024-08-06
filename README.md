@@ -1,6 +1,10 @@
 # Javascript Data Types
 ## Undefined vs null
 
+## Multable vs Immutable 
+- In JavaScript, data types can be categorized as mutable or immutable based on whether their values can be changed after they are created.
+- Primitives are immutable and non-primitives are mutable means they will be modifed after created.
+
 Undefined : in the absence of a definition. Undefined uses as a default value when JS engine initializes our
 variables. we sue Undefined for anything like functions dont retuurn anythng or missing properties from object.
 
