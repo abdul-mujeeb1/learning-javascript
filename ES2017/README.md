@@ -91,3 +91,14 @@
      ```
    - **Key Points:** 
      - Ensures that the cleanup code runs after a promise is resolved or rejected.
+
+
+### 8. Template Literal Revision
+Purpose: ES2018 allows tagged template literals to handle escape sequences more flexibly.
+Usage:
+javascript
+Copy code
+function tag(strings) {
+    return strings.raw[0];
+}
+console.log(tag`Line 1\nLine 2`); // 'Line 1\nLine 2'
